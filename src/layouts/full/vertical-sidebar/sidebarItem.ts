@@ -25,7 +25,7 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-    { header: 'Starterkit' },
+    { header: 'Cobros prueba' },
     {
         title: 'Sample Page',
         icon: BrandChromeIcon,
@@ -68,39 +68,11 @@ const sidebarItem: menu[] = [
             }
         ]
     },
+    { header: 'Cobros prueba' },
     {
-        title: 'Disabled',
-        icon: CircleOffIcon,
-        disabled: true,
-        to: '/modernize'
-    },
-    {
-        title: 'Sub Caption',
-        icon: StarIcon,
-        subCaption: 'This is the subtitle',
-        to: '/modernize'
-    },
-    {
-        title: 'Chip',
-        icon: AwardIcon,
-        chip: '9',
-        chipColor: 'surface',
-        chipBgColor: 'primary',
-        to: '/modernize'
-    },
-    {
-        title: 'Outlined',
-        icon: MoodSmileIcon,
-        chip: 'outline',
-        chipColor: 'primary',
-        chipVariant: 'outlined',
-        to: '/modernize'
-    },
-    {
-        title: 'External Link',
-        icon: StarIcon,
-        to: '/modernize',
-        type: 'external'
+        title: 'Cobros prueba',
+        icon: CircleIcon,
+        to: '/cobros-prueba'
     }
 ];
 

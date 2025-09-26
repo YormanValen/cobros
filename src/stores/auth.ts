@@ -24,7 +24,7 @@ export const useAuthStore = defineStore({
             // store user details and jwt in local storage to keep user logged in between page refreshes
             localStorage.setItem('user', JSON.stringify(user));
             // redirect to previous url or default to home page
-            router.push(this.returnUrl || '/dashboards/modern');
+            router.push(this.returnUrl || '/');
         },
 
         //Ejemplo de metodo de la api
@@ -36,7 +36,7 @@ export const useAuthStore = defineStore({
         logout() {
             this.user = null;
             localStorage.removeItem('user');
-            router.push('/');
+            router.push('/auth/login');
         }
     }
 });

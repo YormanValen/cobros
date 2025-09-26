@@ -10,14 +10,14 @@ import { HelpIcon,ChevronDownIcon } from 'vue-tabler-icons';
     <!-- mega menu DD -->
     <!-- ---------------------------------------------- -->
     <v-menu open-on-hover :close-on-content-click="false">
-        <template v-slot:activator="{ props }">
+        <!-- <template v-slot:activator="{ props }">
             <v-btn class="hidden-sm-and-down" rounded="sm" variant="text" color="primary" v-bind="props"> Apps  <ChevronDownIcon size="16" class="mt-1 ml-1" /> </v-btn>
-        </template>
-        <v-sheet width="900" height="382" elevation="10" rounded="md" class="pa-4 pb-0">
+        </template> -->
+    <!--     <v-sheet width="900" height="382" elevation="10" rounded="md" class="pa-4 pb-0">
             <div>
                 <v-row>
                     <v-col cols="12" lg="8" class="d-flex py-0">
-                        <div class="pa-4 pb-0 pr-0">
+                        <div class="pa-4 pb-0 pr-0">    
                             <AppsLink />
                             <v-divider class="mt-6"></v-divider>
                             <div class="pa-5 pl-0">
@@ -41,7 +41,7 @@ import { HelpIcon,ChevronDownIcon } from 'vue-tabler-icons';
                     </v-col>
                 </v-row>
             </div>
-        </v-sheet>
+        </v-sheet> -->
     </v-menu>
     <v-btn variant="text" color="primary">Chat </v-btn>
     <v-btn variant="text" color="primary">Calendar </v-btn>

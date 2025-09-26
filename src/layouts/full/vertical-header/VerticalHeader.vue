@@ -68,18 +68,18 @@ watch(priority, (newPriority) => {
         <!-- ---------------------------------------------- -->
         <!-- translate -->
         <!-- ---------------------------------------------- -->
-        <LanguageDD />
+      <!--   <LanguageDD /> -->
 
         
 
         <!-- ---------------------------------------------- -->
         <!-- ShoppingCart -->
         <!-- ---------------------------------------------- -->
-        <v-btn icon variant="text" color="primary" to="/ecommerce/checkout">
+        <!-- <v-btn icon variant="text" color="primary" to="/ecommerce/checkout">
             <v-badge  color="error" :content="0">
                 <ShoppingCartIcon stroke-width="1.5" size="22" />
             </v-badge>
-        </v-btn>
+        </v-btn> -->
 
         <!-- ---------------------------------------------- -->
         <!-- Notification -->
@@ -87,7 +87,7 @@ watch(priority, (newPriority) => {
         <NotificationDD />
 
         <!-- right sidebar -->
-        <v-btn
+      <!--   <v-btn
             variant="text"
             color="primary"
             class="hidden-lg-and-up"
@@ -95,7 +95,7 @@ watch(priority, (newPriority) => {
             @click.stop="appsdrawer = !appsdrawer"
         >
             <GridDotsIcon size="17" stroke-width="1.5" />
-        </v-btn>
+        </v-btn> -->
 
         <!-- ---------------------------------------------- -->
         <!-- User Profile -->

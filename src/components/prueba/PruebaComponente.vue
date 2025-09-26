@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CobroType } from '@/types/cobroType';
+import type { CobroType } from '@/types/cobroType';
 
 const props = defineProps({
     nombre: {
