@@ -11,6 +11,7 @@ const MainRoutes = {
             path: '/',
             component: () => import('@/views/StarterPage.vue')
         },
+        //Aqui crea mas rutas a las views que desees
     ]
 };
 

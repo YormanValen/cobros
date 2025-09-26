@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { router } from '@/router';
 import { fetchWrapper } from '@/utils/helpers/fetch-wrapper';
+import { getUser } from '@/services/auth/getUser';
 
 const baseUrl = `${import.meta.env.VITE_API_URL}/users`;
 
@@ -13,6 +14,8 @@ export const useAuthStore = defineStore({
         returnUrl: null
     }),
     actions: {
+        //Desde aquí se llaman a los metodos de la api
+
         async login(username: string, password: string) {
             const user = await fetchWrapper.post(`${baseUrl}/authenticate`, { username, password });
 
@@ -23,6 +26,13 @@ export const useAuthStore = defineStore({
             // redirect to previous url or default to home page
             router.push(this.returnUrl || '/dashboards/modern');
         },
+
+        //Ejemplo de metodo de la api
+        async getUser() {
+            const user = await getUser(this.user.journalID);
+            return user;
+        },
+
         logout() {
             this.user = null;
             localStorage.removeItem('user');
